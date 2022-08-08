@@ -29,7 +29,7 @@ function devolverString(str) {
   // "Return" la string provista: str
   // Tu código: 
   function devolverString(str) {
-console.log('Hola')
+console.log(str)
   }
   devolverString('Hola')
 }
