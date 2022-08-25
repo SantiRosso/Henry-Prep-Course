@@ -6,13 +6,11 @@ function obtenerMayor(x, y) {
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
   if(x > y) {
-    return(x);
-  }
-  else if (x < y) {
-    return (y);
-  }
-  else {
-    return(x || y)
+    return x;
+  } else if (x < y) {
+    return y;
+  } else {
+    return x || y;
   }
 }
 
@@ -21,9 +19,9 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if(edad >= 18) {
-    return "Allowed"
+    return "Allowed";
   } else {
-    return "Not allowed"
+    return "Not allowed";
   }
 }
   
@@ -34,11 +32,11 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if(status === 1) {
-    return"Online";
+    return "Online";
   } else if(status === 2) {
-    return"Away";
+    return "Away";
   } else {
-    return"Offline";
+    return "Offline";
   }
 }
 
@@ -50,12 +48,12 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if(idioma === "aleman") {
-    return"Guten Tag!";
-  }else if(idioma === "mandarin") {
+    return "Guten Tag!";
+  } else if(idioma === "mandarin") {
     return "Ni Hao!";
-  }else if(idioma === "ingles") {
+  } else if(idioma === "ingles") {
     return "Hello!";
-  }else {
+  } else {
     return "Hola!";
   }
 }
@@ -143,17 +141,13 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   if (num1 < 0 || num2 < 0 || num3 < 0) {
     return "Hay negativos";
-  } 
-  else if (num1 === 0 || num2 === 0 || num3 ===0) {
+  } else if (num1 === 0 || num2 === 0 || num3 ===0) {
     return "Error";
-  } 
-  else if (num3 > num1 && num3 > num2) {
+  } else if (num3 > num1 && num3 > num2) {
     return (num3 + 1);
-  } 
-  else if(num1 > num2 && num1 > num3 && num1 > 0) {
+  } else if(num1 > num2 && num1 > num3 && num1 > 0) {
     return "Número 1 es mayor y positivo";
-  } 
-  else {
+  } else {
     return false;
   }
 }
@@ -166,15 +160,15 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
 
-if(numero === 2){
+ if(numero === 2) {
   return true;
-} else if(numero < 2){
+ } else if(numero < 2) {
   return false;
-}
-for( var i = 2; i < numero; i++) {
-  if(numero % i === 0) {
-    return false;
-  }
+ }
+ for( var i = 2; i < numero; i++) {
+   if(numero % i === 0) {
+     return false;
+    }
   }
   return true;
 }
@@ -184,11 +178,11 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-if(valor === true) {
+ if(valor === true) {
   return "Soy verdadero";
-} else {
+ } else {
   return "Soy falso";
-}
+ }
 }
 
 
@@ -197,10 +191,10 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   var lista = [];
-    for(var i = 0; i < 11; i++) { 
-      lista.push(i * 6)
+  for(var i = 0; i < 11; i++) { 
+    lista.push(i * 6);
   }
-return lista;
+  return lista;
 }
 
 function tieneTresDigitos(numero){
@@ -217,14 +211,13 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var i = 0
+  var i = 0;
   do { 
     numero = numero + 5; 
     i++;
-
-  } while ( i < 8)
-  return numero;
- }
+  } while ( i < 8);
+   return numero;
+}
 
 
 // No modificar nada debajo de esta línea
