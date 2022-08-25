@@ -12,8 +12,11 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  elemento = array.pop ();
-  return elemento;
+  for(let i = 0; i < array.length; i++) {
+    if(i === array.length -1) {
+      return array[i];
+    }
+  }
 }
 
 
