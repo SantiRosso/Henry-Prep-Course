@@ -29,18 +29,18 @@ function sumarArray(numeros, cb) {
   /*
   CON FOR:
 
-  var x = 0;
-  for(var i = 0; i < numeros.length; i++){
+  let x = 0;
+  for(var i = 0; i < numeros.length; i++) {
    x = x + numeros[i];
   }
   cb(x);
   */
 
-var suma = 0;
-suma = numeros.reduce(function (acc, elemento){
+ let suma = 0;
+ suma = numeros.reduce(function (acc, elemento) {
   return acc + elemento;
-})
-cb(suma);
+ })
+ cb(suma);
 }
 
 function forEach(array, cb) {
@@ -51,12 +51,12 @@ function forEach(array, cb) {
   /* 
   CON FOR:
 
-  for(var i = 0; i < array.length; i++){
+  for(var i = 0; i < array.length; i++) {
     cb(array[i]);
-      }
+  }
   */
 
-      array.forEach(function(elemento){
+      array.forEach(function(elemento) {
        cb(elemento);
       })
 }
@@ -66,17 +66,17 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
-  var array2 = array.map(function(elemento){
+  let array2 = array.map(function(elemento) {
     return cb(elemento);
   })
-return array2;
+  return array2;
 }
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  var array2 = array.filter(function(str){
+  let array2 = array.filter(function(str) {
     return str[0] === 'a';
   })
   return array2;
