@@ -6,7 +6,7 @@ function crearGato (nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
-  var objeto = {
+  let objeto = {
     nombre: nombre,
     edad: edad,
     meow: function meow() {
@@ -53,7 +53,7 @@ function nuevoUsuario (nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-var objeto = {
+let objeto = {
   nombre: nombre,
   email: email,
   password: password,
@@ -134,7 +134,7 @@ function sumarLikesDeUsuario (usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-  var a = 0;
+  let a = 0;
   for(i = 0; i < usuario.posts.length; i++) {
     a = a + usuario.posts[i].likes;
   }
@@ -151,8 +151,8 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-  var a = 0;
-  varb = 0;
+  let a = 0;
+  let b = 0;
 
   producto.calcularPrecioDescuento = function calcularPrecioDescuento() {
     return producto.precio - (producto.precio * producto.porcentajeDeDescuento);
