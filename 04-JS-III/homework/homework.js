@@ -134,8 +134,6 @@ function multiplicarArgumentos() {
     a = a * arguments[i];
   }
   return a;
-  
-
 }
 
 
