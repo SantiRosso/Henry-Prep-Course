@@ -129,12 +129,12 @@ function multiplicarArgumentos() {
     return 0;
   } else if(arguments.length === 1) {
     return arguments[0];
-  } else {
+  } 
   for (var i = 0; i < arguments.length; i++) {
     a = a * arguments[i];
   }
-   return a;
-  }
+  return a;
+  
 
 }
 
